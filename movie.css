@@ -1,0 +1,155 @@
+/*Author: Shiyu Cheng 23329948
+ Date: 1/30/2019 CSC 337 Spring 2019
+ This is the assignment 2 for creating a movie review web-page
+ including features: 1,W3C img semi-transparent. 2, Small white text. 3, favorites icon */
+body{
+    /*background img setting*/
+    background-image: url("http://allisonobourn.com/images/moviebg.png");
+}
+.W3C{
+    opacity: 0.5;
+    /*set the W3C be semi-transparent*/
+    text-align: right;
+    transition: all;
+}
+.W3C:hover{
+    /*making hover function for W3C*/
+    opacity: 1;
+}
+.banner{
+    /*setting banner picture*/
+    width:auto;
+    height: auto;
+    text-align: center;
+    background-image: url("http://allisonobourn.com/images/rancidbannerbg.png");
+    background-repeat: repeat-x;
+    margin-top: -10px;
+}
+h1{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+.box{
+    box-shadow:5px 5px 5px gray;
+    /*setting the shadow effect*/
+    width: 800px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+.content{
+    width: 800px;
+    height: 1154.42px;
+    margin: auto;
+    background-color: #EEEEEE;
+    border-top-right-radius: 20px;
+    /*radius setting*/
+    border-top-left-radius: 20px;
+}
+.content .left{
+    /*left session: comments*/
+    width: 550px;
+    float: left;
+    height: 1160px;
+}
+.rotten{
+    border-top-left-radius: 20px;
+    float: left;
+}
+.content .rottenTitle{
+    background-image: url("http://allisonobourn.com/images/rottenlargebg.png");
+    background-repeat: repeat-x;
+    border-top-left-radius: 20px;
+    height: 83px;
+    /*overflow: auto;
+    */
+}
+.content .rottenTitle .rate{
+    /*setting the final rate*/
+    float: right;
+    margin-right: 270px;
+    margin-top: 5px;
+}
+.content .rottenTitle .num {
+    color: red;
+    font-weight: bold;
+    font-size: 48pt;
+}
+.content .rottenTitle .percent {
+    color: white;
+    font-weight: normal;
+    font-size: 8pt;
+}
+.content .right {
+    /*setting the right session: movie info*/
+    width: 250px;
+    height: auto;
+    float: right;
+}
+.content .leftCol, .content .rightCol{
+    float: left;
+    width: 47%;
+    background: #EEEEEE;
+    margin: 0;
+}
+.content p:nth-child(odd){
+    /*setting for audiences'quotes*/
+    font-size: 10pt;
+    background-color: #FFFFFF;
+    border: solid 2px #CCCCCC;
+    border-radius: 20px;
+    font-family: Georgia, "Times New Roman", sans-serif;
+    padding: 8px;
+    margin-top: 20pt;
+    height: auto;
+    overflow: auto;
+}
+.content .leftCol span, .content .rightCol span{
+    font-style: italic;
+}
+.content p:nth-child(odd) img, .content p:nth-child(even) img{
+    float: left;
+}
+.content .rightCol img, .content .leftCol img{
+    margin-right: 5px;
+}
+.content .leftCol, .content .rightCol{
+    margin: 8px;
+}
+.content .poster{
+    /*setting poster*/
+    border-top-right-radius: 20px;
+}
+.content .right .rightUp{
+    height: 412px;
+}
+.content .right .rightDown{
+    /*movie info*/
+    background-color: #A2B964;
+    padding: 10pt;
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.content .right .rightDown dt{
+    font-weight: bold;
+}
+.content .right .rightDown dd{
+    margin-bottom: 10pt;
+}
+.content .right .rightDown ul{
+    margin-left: -30px;
+}
+.content .right .rightDown li{
+    list-style-type: none;
+}
+.box .page{
+    /*seting the page bar*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #A2B964;
+    padding: 5px 40% 5px 40%;
+}
